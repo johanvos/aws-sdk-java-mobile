@@ -17,8 +17,6 @@
 
 package com.amazonaws.mobile.auth.core;
 
-import android.app.Activity;
-
 /**
  * Interface for handling results from calling IdentityManager's signInOrSignUp().
  */
@@ -29,14 +27,14 @@ public interface SignInResultHandler {
      * @param callingActivity the calling activity that should be finished.
      * @param provider the provider or null if succeeded with an unauthenticated identity.
      */
-    void onSuccess(Activity callingActivity, IdentityProvider provider);
+    void onSuccess(IdentityProvider provider);
 
     /**
      * User cancelled signing in with a provider on the sign-in activity.
      * Note: The user is still on the sign-in activity when this call is made.
      * @param provider the provider the user canceled with.
      */
-    void onIntermediateProviderCancel(Activity callingActivity, IdentityProvider provider);
+    void onIntermediateProviderCancel(IdentityProvider provider);
 
     /**
      * User encountered an error when attempting to sign-in with a provider.
@@ -44,12 +42,12 @@ public interface SignInResultHandler {
      * @param provider the provider the user attempted to sign-in with that encountered an error.
      * @param ex the exception that occurred.
      */
-    void onIntermediateProviderError(Activity callingActivity, IdentityProvider provider, Exception ex);
+    void onIntermediateProviderError(IdentityProvider provider, Exception ex);
 
     /**
      * User pressed back from the sign-in Activity.
      *
      * @return true if the activity should be finished, otherwise false.
      */
-    boolean onCancel(Activity callingActivity);
+    boolean onCancel();
 }
