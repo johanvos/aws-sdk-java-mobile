@@ -5,7 +5,7 @@
   <groupId>com.amazonaws</groupId>
   <artifactId>aws-android-sdk-mobile-client</artifactId>
   <packaging>aar</packaging>
-  <name>AWS SDK for Android - AWS Mobile Client</name>
+  <name>&lt;partially loaded Maven project&gt;</name>
   <description>The AWS Android SDK for Mobile Core holds the client classes that are used for initializing the SDK and instantiating the SDK clients.</description>
   <url>http://aws.amazon.com/sdkforandroid</url>
 
