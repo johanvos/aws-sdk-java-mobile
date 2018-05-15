@@ -4,9 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.amazonaws</groupId>
   <artifactId>aws-android-sdk-auth-core</artifactId>
-  <packaging>aar</packaging>
-  <name>&lt;partially loaded Maven project&gt;</name>
-  <description>The AWS Android SDK for AWS Authentication Core module holds the client classes that are used for enabling communication with Amazon CognitoIdentityProvider, Amazon Cognito UserPools, Facebook and Google SignIn Providers</description>
+  <name>AWS SDK for Java - AWS Authentication Core</name>
+  <description>The AWS Java SDK for AWS Authentication Core module holds the client classes that are used for enabling communication with Amazon CognitoIdentityProvider, Amazon Cognito UserPools, Facebook and Google SignIn Providers</description>
   <url>http://aws.amazon.com/sdkforandroid</url>
 
   <properties>
@@ -20,14 +19,14 @@
 
   <parent>
     <groupId>com.amazonaws</groupId>
-    <artifactId>aws-android-sdk-pom</artifactId>
+    <artifactId>aws-java-sdk-pom</artifactId>
     <version>2.6.19</version>
   </parent>
 
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
-      <artifactId>aws-android-sdk-core</artifactId>
+      <artifactId>aws-java-sdk-core</artifactId>
       <optional>false</optional>
       <version>2.6.19</version>
     </dependency>

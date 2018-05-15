@@ -3,10 +3,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.amazonaws</groupId>
-  <artifactId>aws-android-sdk-mobile-client</artifactId>
-  <packaging>aar</packaging>
-  <name>&lt;partially loaded Maven project&gt;</name>
-  <description>The AWS Android SDK for Mobile Core holds the client classes that are used for initializing the SDK and instantiating the SDK clients.</description>
+  <artifactId>aws-java-sdk-mobile-client</artifactId>
+  <packaging>jar</packaging>
+  <name>AWS SDK for Java - AWS Mobile Client</name>
+  <description>The AWS Java SDK for Mobile Core holds the client classes that are used for initializing the SDK and instantiating the SDK clients.</description>
   <url>http://aws.amazon.com/sdkforandroid</url>
 
   <properties>
@@ -18,28 +18,22 @@
     </project.reporting.outputEncoding>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>android-support</id>
-      <url>file://${env.ANDROID_HOME}/extras/android/m2repository/</url>
-    </repository>
-  </repositories>
 
   <parent>
     <groupId>com.amazonaws</groupId>
-    <artifactId>aws-android-sdk-pom</artifactId>
+    <artifactId>aws-java-sdk-pom</artifactId>
     <version>2.6.19</version>
   </parent>
 
   <dependencies>
     <dependency>
       <groupId>com.amazonaws</groupId>
-      <artifactId>aws-android-sdk-auth-core</artifactId>
+      <artifactId>aws-java-sdk-auth-core</artifactId>
       <optional>false</optional>
       <version>2.6.19</version>
       <type>aar</type>
     </dependency>
-
+<!--
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-android-sdk-auth-ui</artifactId>
@@ -78,7 +72,7 @@
       <optional>true</optional>
       <version>2.6.19</version>
       <type>aar</type>
-    </dependency>
+    </dependency>-->
 
     <dependency>
       <groupId>com.android.support</groupId>
